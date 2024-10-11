@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="src/CSS/style.css">
 </head>
 <body>
     <main>
         <div class="pokedevs">
-            <nav class="listagem">
+            <!-- <nav class="listagem">
                 <ul>
                     <li class="pokedev ativa" id="devchu"></li>
                         <img src="src/imagens/devchu.png" alt="">
@@ -19,34 +20,38 @@
                         <p>Scriptle</p>
                     </li>
                 </ul>
-            </nav>
+            </nav> -->
             <section class="cartoes">
-                <div id="devchu">
+                <div class="cartao"  id="devchu">
                     <section class="cartao-topo">
-                        <h1 class="nome">Devchu</h1>
-                        <span class="numero">#001</span>
+                        <div class="detalhes">
+                            <h1 class="nome">Devchu</h1>
+                            <span class="numero">#001</span>
+                        </div>
                         <span class="tipo">Elétrico</span>
                         <div class="cartao-imagem">
                             <img src="src/imagens/devchu.png" alt="">
                         </div>
                     </section>
-                    <section class="cartao-informacao">
+                    <section class="informacao">
                         <h2>Descrição</h2>
                         <p>Quando se depara com um erro no código, fica bastante irritado. Sente a tensão acumulada em cada músculo, como se estivesse prestes a soltar raios pelos dedos. Mas, em vez de se deixar abater, canaliza toda essa energia em busca da solução. Cada linha de código é examinada e ele não descansa até que o erro seja encontrado e corrigido.</p>
                     </section>
                 </div>
-                <div id="scriptle"></div>
+                <div class="cartao aberto" id="scriptle">
                     <section class="cartao-topo">
-                        <h1 class="nome">Scriptle</h1>
-                        <span class="numero">#002</span>
+                        <div class="detalhes">
+                            <h1 class="nome">Scriptle</h1>
+                            <span class="numero">#002</span>
+                        </div>
                         <span class="tipo">Água</span>
                         <div class="cartao-imagem">
                             <img src="src/imagens/scriptle.png" alt="">
                         </div>
                     </section>
-                    <section class="cartao-informacao">
+                    <section class="informacao">
                         <h2>Descrição</h2>
-                        <p></p>
+                        <p>Mesmo sendo um programador iniciante, este pokedev já domina habilidades fundamentais em Javascript como: Depurar o código, Manipulação do DOM, Trabalhar com APIs, Conhecimento de frameworks e bibliotecas tornando o código mais eficiente.</p>
                     </section>
                 </div>
             </section>
