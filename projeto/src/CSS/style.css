@@ -79,32 +79,32 @@ main{
     overflow-y: scroll;
 }
 
-#devchu {
+.eletrico {
     background-color: #FCC719;
     border-radius: 5px;
 }
 
-# {
+.fogo{
     background-color: #f15000d2;
     border-radius: 5px;
 }
 
-#scriptle {
+.agua {
     background-color: #015C98;
     border-radius: 5px;
 }
 
-.tipo-grama {
+.grama {
     background-color: #49D0B0;
     border-radius: 5px;
 }
 
-.tipo-trevas {
+.trevas {
     background-color: #BA68C8;
     border-radius: 5px;
 }
 
-.tipo-fada {
+.fada {
     background-color: #C29791;
     border-radius: 5px;
 }
