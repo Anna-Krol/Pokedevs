@@ -11,6 +11,17 @@ body{
     background-size: cover;
 }
 
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    backdrop-filter: blur(8px);
+}
+
 main{
     display: flex; /* tornar o posicionamento mais fácil, permite alterar o comportamento do que está dentro*/
     justify-content: center;
@@ -19,13 +30,20 @@ main{
 
 }
 
+.pokedevs{
+    display: flex;
+    gap: 30px;
+    padding: 30px 0;
+}
+
 .cartao{
     display: none;
+    max-width: 360px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .cartao.aberto{
     display: block;
-    max-width: 360px;
 }
 
 .cartao-topo{
@@ -107,4 +125,39 @@ main{
 .fada {
     background-color: #C29791;
     border-radius: 5px;
+}
+
+.listagem {
+    max-width: 200px;
+}
+
+.listagem img{
+    width: 25%;
+}
+
+.listagem .pokedev {
+    background-color: #6b727a;
+    color: white;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    border-top-right-radius:30px ;
+    border-bottom-left-radius: 30px;
+    cursor: pointer;
+    transition: 0.15 ease-in-out;
+}
+
+.listagem .pokedev.ativa{
+    background-color: #fa6668;
+}
+
+.listagem .pokedev:hover{
+    transform: scale(1.05);
+}
+
+.listagem ul{
+    list-style-type: none;
 }
